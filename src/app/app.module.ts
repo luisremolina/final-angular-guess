@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { environment } from 'src/environments/environment';
 import { SharedModule } from './shared/shared.module';
+import { QuicklinkModule } from 'ngx-quicklink';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SharedModule } from './shared/shared.module';
     AngularFireAnalyticsModule,
     AngularFirestoreModule,
     SharedModule,
+    QuicklinkModule
   ],
   providers: [],
   bootstrap: [AppComponent]
