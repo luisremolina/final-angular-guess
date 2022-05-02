@@ -43,7 +43,7 @@ export class CreateComponent implements OnInit {
     console.log(product);
     this.productService.created(product).then( () =>{
       console.log("Producto registrado con exito");
-      this.router.navigate(['/products/edit'])
+      this.router.navigate(['home//products/productos'])
     }).catch( error => {
       console.log("Error:" + error);
     })
